@@ -1,0 +1,857 @@
+/* =====================================================
+   FACILITIES PAGE
+===================================================== */
+
+
+/* ================= HERO ================= */
+
+.facilities-hero {
+    min-height: 430px;
+
+    display: flex;
+    align-items: center;
+
+    background:
+        linear-gradient(
+            135deg,
+            #174b29 0%,
+            #246b3a 55%,
+            #3f8153 100%
+        );
+
+    color: #ffffff;
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+
+.facilities-hero::before {
+    content: "";
+
+    position: absolute;
+
+    width: 420px;
+    height: 420px;
+
+    border: 1px solid rgba(255,255,255,0.14);
+
+    border-radius: 50%;
+
+    right: -130px;
+    top: -140px;
+}
+
+
+.facilities-hero::after {
+    content: "";
+
+    position: absolute;
+
+    width: 250px;
+    height: 250px;
+
+    border: 1px solid rgba(255,255,255,0.10);
+
+    border-radius: 50%;
+
+    right: 100px;
+    bottom: -150px;
+}
+
+
+.facilities-hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+
+.facilities-hero .section-tag {
+    color: #f5c842;
+}
+
+
+.facilities-hero h1 {
+    font-family: "Poppins", sans-serif;
+
+    font-size: clamp(2.5rem, 5vw, 4.3rem);
+
+    line-height: 1.1;
+
+    margin: 18px 0;
+
+    font-weight: 800;
+}
+
+
+.facilities-hero h1 span {
+    color: #f5c842;
+}
+
+
+.facilities-hero p {
+    max-width: 650px;
+
+    color: rgba(255,255,255,0.86);
+
+    font-size: 1.05rem;
+
+    line-height: 1.8;
+}
+
+
+/* ================= FACILITIES INTRO ================= */
+
+.facilities-intro {
+    padding: 90px 0;
+
+    background: #ffffff;
+}
+
+
+.section-heading {
+    max-width: 700px;
+
+    margin: 0 auto 55px;
+
+    text-align: center;
+}
+
+
+.section-tag {
+    display: inline-block;
+
+    color: #246b3a;
+
+    font-size: 0.75rem;
+
+    font-weight: 800;
+
+    letter-spacing: 1.5px;
+
+    margin-bottom: 10px;
+}
+
+
+.section-heading h2 {
+    font-family: "Poppins", sans-serif;
+
+    color: #14251a;
+
+    font-size: clamp(2rem, 4vw, 3rem);
+
+    line-height: 1.2;
+
+    margin: 5px 0 15px;
+}
+
+
+.section-heading p {
+    color: #6f7c73;
+
+    font-size: 1rem;
+
+    line-height: 1.8;
+}
+
+
+/* ================= FACILITIES GRID ================= */
+
+.facilities-grid {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 20px;
+}
+
+
+/* ================= FACILITY CARD ================= */
+
+.facility-card {
+    position: relative;
+
+    padding: 30px 25px;
+
+    background: #ffffff;
+
+    border: 1px solid #e2ebe4;
+
+    border-radius: 18px;
+
+    box-shadow: 0 10px 30px rgba(20,37,26,0.05);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        border-color 0.3s ease;
+}
+
+
+.facility-card:hover {
+    transform: translateY(-7px);
+
+    border-color: #b9d6c1;
+
+    box-shadow: 0 18px 40px rgba(20,37,26,0.10);
+}
+
+
+/* ================= CARD NUMBER ================= */
+
+.facility-number {
+    position: absolute;
+
+    top: 20px;
+    right: 20px;
+
+    color: #dce9df;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 0.8rem;
+
+    font-weight: 800;
+}
+
+
+/* ================= ICON ================= */
+
+.facility-icon {
+    width: 58px;
+    height: 58px;
+
+    display: grid;
+
+    place-items: center;
+
+    background: #eaf5ed;
+
+    border-radius: 15px;
+
+    font-size: 1.6rem;
+
+    margin-bottom: 22px;
+}
+
+
+.facility-card h3 {
+    font-family: "Poppins", sans-serif;
+
+    color: #14251a;
+
+    font-size: 1.15rem;
+
+    margin: 0 0 12px;
+}
+
+
+.facility-card p {
+    color: #718078;
+
+    font-size: 0.85rem;
+
+    line-height: 1.7;
+
+    margin-bottom: 20px;
+}
+
+
+/* ================= FACILITY LABEL ================= */
+
+.facility-feature {
+    display: inline-block;
+
+    padding: 7px 11px;
+
+    border-radius: 50px;
+
+    background: #f5f8f6;
+
+    color: #246b3a;
+
+    font-size: 0.68rem;
+
+    font-weight: 700;
+}
+
+
+/* ================= CAMPUS HIGHLIGHTS ================= */
+
+.campus-highlights {
+    padding: 95px 0;
+
+    background: #f5f8f6;
+}
+
+
+.highlights-layout {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 70px;
+
+    align-items: center;
+}
+
+
+.highlights-content .section-tag {
+    margin-bottom: 12px;
+}
+
+
+.highlights-content h2 {
+    font-family: "Poppins", sans-serif;
+
+    color: #14251a;
+
+    font-size: clamp(2rem, 4vw, 3rem);
+
+    line-height: 1.2;
+
+    margin: 0 0 18px;
+}
+
+
+.highlights-content > p {
+    color: #6f7c73;
+
+    font-size: 0.95rem;
+
+    line-height: 1.8;
+
+    margin-bottom: 30px;
+}
+
+
+/* ================= HIGHLIGHT LIST ================= */
+
+.highlight-list {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 22px;
+}
+
+
+.highlight-item {
+    display: flex;
+
+    gap: 15px;
+
+    align-items: flex-start;
+}
+
+
+.highlight-check {
+    width: 30px;
+    height: 30px;
+
+    min-width: 30px;
+
+    display: grid;
+
+    place-items: center;
+
+    border-radius: 50%;
+
+    background: #246b3a;
+
+    color: #ffffff;
+
+    font-size: 0.8rem;
+
+    font-weight: 800;
+}
+
+
+.highlight-item h4 {
+    font-family: "Poppins", sans-serif;
+
+    color: #14251a;
+
+    font-size: 0.95rem;
+
+    margin: 0 0 5px;
+}
+
+
+.highlight-item p {
+    color: #718078;
+
+    font-size: 0.82rem;
+
+    line-height: 1.6;
+
+    margin: 0;
+}
+
+
+/* ================= CAMPUS VISUAL ================= */
+
+.campus-visual {
+    position: relative;
+
+    min-height: 430px;
+
+    display: flex;
+
+    align-items: flex-end;
+
+    justify-content: center;
+
+    overflow: hidden;
+
+    background:
+        linear-gradient(
+            180deg,
+            #dfeee3 0%,
+            #edf5ef 65%,
+            #c8dfce 65%,
+            #c8dfce 100%
+        );
+
+    border-radius: 25px;
+
+    border: 1px solid #d7e5da;
+}
+
+
+/* ================= BUILDING ================= */
+
+.campus-building {
+    width: 65%;
+
+    position: relative;
+
+    z-index: 2;
+
+    margin-bottom: 55px;
+}
+
+
+.building-top {
+    height: 55px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: #174b29;
+
+    color: #f5c842;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 0.8rem;
+
+    font-weight: 800;
+
+    letter-spacing: 1.5px;
+
+    border-radius: 8px 8px 0 0;
+}
+
+
+.building-main {
+    height: 210px;
+
+    padding: 25px;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 15px;
+
+    align-items: center;
+
+    background: #ffffff;
+
+    border-left: 5px solid #246b3a;
+
+    border-right: 5px solid #246b3a;
+
+}
+
+
+.building-window {
+    height: 55px;
+
+    background: #9fc5aa;
+
+    border: 5px solid #eaf5ed;
+
+    border-radius: 5px;
+}
+
+
+.building-door {
+    grid-column: 2 / 4;
+
+    height: 75px;
+
+    background: #246b3a;
+
+    border-radius: 7px 7px 0 0;
+
+    border: 5px solid #eaf5ed;
+}
+
+
+.building-ground {
+    height: 18px;
+
+    background: #174b29;
+
+    border-radius: 0 0 7px 7px;
+}
+
+
+/* ================= TREES ================= */
+
+.campus-tree {
+    position: absolute;
+
+    font-size: 4.5rem;
+
+    z-index: 3;
+}
+
+
+.tree-one {
+    left: 7%;
+
+    bottom: 50px;
+}
+
+
+.tree-two {
+    right: 6%;
+
+    bottom: 45px;
+}
+
+
+/* ================= CTA ================= */
+
+.facilities-cta {
+    padding: 90px 0;
+
+    background: #174b29;
+
+    color: #ffffff;
+
+    text-align: center;
+}
+
+
+.cta-content {
+    max-width: 750px;
+
+    margin: auto;
+}
+
+
+.facilities-cta .section-tag {
+    color: #f5c842;
+}
+
+
+.facilities-cta h2 {
+    font-family: "Poppins", sans-serif;
+
+    font-size: clamp(2rem, 4vw, 3rem);
+
+    line-height: 1.2;
+
+    margin: 12px 0;
+}
+
+
+.facilities-cta p {
+    color: rgba(255,255,255,0.8);
+
+    line-height: 1.7;
+
+    margin-bottom: 30px;
+}
+
+
+.cta-buttons {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 15px;
+
+    flex-wrap: wrap;
+}
+
+
+.cta-primary,
+.cta-secondary {
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 13px 25px;
+
+    border-radius: 9px;
+
+    font-size: 0.85rem;
+
+    font-weight: 700;
+
+    text-decoration: none;
+
+    transition: 0.3s ease;
+}
+
+
+.cta-primary {
+    background: #f5c842;
+
+    color: #14251a;
+}
+
+
+.cta-primary:hover {
+    transform: translateY(-3px);
+
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+
+.cta-secondary {
+    color: #ffffff;
+
+    border: 1px solid rgba(255,255,255,0.4);
+}
+
+
+.cta-secondary:hover {
+    background: rgba(255,255,255,0.1);
+
+    transform: translateY(-3px);
+}
+
+
+/* ================= FOOTER ================= */
+
+.footer {
+    background: #0f1d14;
+
+    color: #ffffff;
+
+    padding-top: 65px;
+}
+
+
+.footer-grid {
+    display: grid;
+
+    grid-template-columns: 1.5fr 1fr 1fr 1.2fr;
+
+    gap: 40px;
+
+    padding-bottom: 50px;
+}
+
+
+.footer-logo {
+    font-family: "Poppins", sans-serif;
+
+    font-size: 1.3rem;
+
+    font-weight: 800;
+
+    color: #f5c842;
+
+    margin-bottom: 12px;
+}
+
+
+.footer-brand p {
+    color: #c3cec6;
+
+    font-size: 0.85rem;
+
+    margin-bottom: 8px;
+}
+
+
+.footer-brand span {
+    color: #7f9185;
+
+    font-size: 0.78rem;
+}
+
+
+.footer-column {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 10px;
+}
+
+
+.footer-column h4 {
+    font-family: "Poppins", sans-serif;
+
+    font-size: 0.95rem;
+
+    margin-bottom: 8px;
+}
+
+
+.footer-column a {
+    color: #aab8af;
+
+    text-decoration: none;
+
+    font-size: 0.82rem;
+
+    transition: 0.3s ease;
+}
+
+
+.footer-column a:hover {
+    color: #f5c842;
+
+    transform: translateX(3px);
+}
+
+
+.footer-column p {
+    color: #aab8af;
+
+    font-size: 0.82rem;
+
+    margin: 0;
+
+    line-height: 1.6;
+}
+
+
+.footer-bottom {
+    border-top: 1px solid rgba(255,255,255,0.08);
+
+    padding: 20px 0;
+
+    text-align: center;
+}
+
+
+.footer-bottom p {
+    margin: 0;
+
+    color: #718078;
+
+    font-size: 0.75rem;
+}
+
+
+/* =====================================================
+   RESPONSIVE DESIGN
+===================================================== */
+
+
+/* ---------- TABLET ---------- */
+
+@media (max-width: 1000px) {
+
+    .facilities-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .highlights-layout {
+        grid-template-columns: 1fr;
+
+        gap: 45px;
+    }
+
+    .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+/* ---------- MOBILE ---------- */
+
+@media (max-width: 720px) {
+
+    .facilities-hero {
+        min-height: 380px;
+    }
+
+    .facilities-intro,
+    .campus-highlights,
+    .facilities-cta {
+        padding: 65px 0;
+    }
+
+    .facilities-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .campus-visual {
+        min-height: 350px;
+    }
+
+    .campus-building {
+        width: 75%;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+
+        gap: 30px;
+    }
+
+}
+
+
+/* ---------- SMALL MOBILE ---------- */
+
+@media (max-width: 420px) {
+
+    .facilities-hero h1 {
+        font-size: 2.2rem;
+    }
+
+    .section-heading h2 {
+        font-size: 1.8rem;
+    }
+
+    .facility-card {
+        padding: 25px 20px;
+    }
+
+    .campus-visual {
+        min-height: 300px;
+    }
+
+    .campus-building {
+        width: 82%;
+    }
+
+    .campus-tree {
+        font-size: 3rem;
+    }
+
+    .cta-primary,
+    .cta-secondary {
+        width: 100%;
+    }
+
+}
